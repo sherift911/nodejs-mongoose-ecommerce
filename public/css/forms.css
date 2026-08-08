@@ -1,0 +1,91 @@
+.product-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.product-form .form-control {
+  padding: 5px;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.product-form .form-control textarea {
+  width: 250px;
+  outline: none;
+}
+.form-control input {
+  outline: none;
+  width: 250px;
+}
+.form-control input:hover {
+  border-color: red;
+}
+.form-control textarea:hover {
+  border-color: red;
+}
+.product-form button {
+  margin-top: 25px;
+  padding: 4px;
+  text-transform: capitalize;
+  border: 1px solid red;
+  border-radius: 6px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.product-form button:hover {
+  background-color: red;
+  color: white;
+}
+
+/* start login form */
+.login-form .form-control {
+  display: flex;
+  flex-direction: column;
+}
+.login-form .form-control label {
+  margin-bottom: 10px;
+}
+.login-form .form-control input {
+  margin-bottom: 15px;
+}
+.login-form .login-btn {
+  border: 1px solid red;
+  background-color: rgba(255, 0, 0, 0.253);
+  color: red;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 4px;
+  padding: 2px 5px;
+  transition: all 0.3s;
+}
+.login-form .login-btn:hover {
+  background-color: red;
+  color: white;
+}
+/* end login form */
+/* start reset */
+.div-reset {
+  margin-top: 15px;
+}
+.btn-reset {
+  border: 1px solid red;
+  font-size: 15px;
+  font-weight: bold;
+  background-color: rgba(255, 0, 0, 0.164);
+  color: red;
+  transition: all 0.3s;
+}
+.btn-reset:hover {
+  color: white;
+  background-color: red;
+}
+/* end reset */
+
+.form-control input.invalid,
+.form-control textarea.invalid {
+  border-color: red;
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%-include("../includes/head.ejs")%>
+  <body>
+    <%-include("../includes/navigation.ejs")%>
+    <main>
+      <% if (errorMessage) { %>
+        <div class="error-message"><%= errorMessage %></div>
+      <% } %>
+      <form class="login-form" action="/login" method="POST" novalidate>
+        <div class="form-control">
+          <label for="email">Email</label>
+          <input class="<%= validationErrors.find((e) => e.path === 'email') ? 'invalid' : '' %>" type="email" name="email" id="email" value="<%= oldInput.email %>" />
+        </div>
+        <div class="form-control">
+          <label for="password">Password</label>
+          <input class="<%= validationErrors.find((e) => e.path === 'password') ? 'invalid' : '' %>" type="password" name="password" id="password" value="<%= oldInput.password %>" />
+        </div>
+        <input type="hidden" value="<%= csrfToken %>" name="_csrf" />
+        <button class="login-btn" type="submit">Login</button>
+      </form>
+      <div class="div-reset">
+        <a class="btn-reset" href="/reset">Reset Password</a>
+      </div>
+    </main>
+    <%-include("../includes/end.ejs")%>
+  </body>
+</html>
