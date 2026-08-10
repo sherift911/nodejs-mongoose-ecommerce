@@ -1,6 +1,6 @@
 # Node.js Mongoose E-Commerce
 
-A full-stack e-commerce application built with Node.js, Express.js, MongoDB, Mongoose, and EJS.
+A full-stack e-commerce application built with Node.js, Express.js, MongoDB, Mongoose, and EJS..
 
 ## 🌐 Live Demo
 [Click Here](https://nodejs-mongoose-ecommerce-production.up.railway.app/)
